@@ -1,0 +1,15 @@
+// Also called as Named slots
+Named slots allow multiple slots to be used in the same component
+we just need to pass name attribute to the slots and in the parent component use slot attribute differentiate between 
+the different components to be passed to different slots
+e.g.
+in child:>
+<slot name="heading"></slot>
+in Parent:>
+<child-component>
+    <h1 slot="heading">My Heading</h1>
+</child-component>
+
+we can pass default values in the slot as well. If a slot doesn't take a value then its default value would be shown
+
+

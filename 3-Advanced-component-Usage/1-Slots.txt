@@ -1,0 +1,4 @@
+Slots - A mechanism by which we insert HTML inside a component directu=ly..
+The contents get compiled and then showed in the final child component.
+Note: all the properties need to be passed into the child from the parent need to be declared and defined inside the parents data object only
+Only styles are the exception where in we define the styling in corresponding child component

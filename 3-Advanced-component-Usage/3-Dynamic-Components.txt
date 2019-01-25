@@ -1,0 +1,13 @@
+Dynamic components can be inserted into a parent component by using <component/> component where its a reserved component like slot
+the <component /> expects the :is binding where the value of :is should be the name of the component to be loaded inside it dynamically
+
+
+This can be helpful in creating tabs like structure
+
+When switching between dynamic components, the component gets destroyed once the other component is loaded that is we navigate away from the
+current component.
+To override this default behaviour we need to wrap our <component /> inside <keep-alive /> component.
+
+Dynamic components lifecycle hooks:
+1. deactivated
+2. activated
